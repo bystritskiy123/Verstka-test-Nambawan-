@@ -110,7 +110,7 @@ body {
 #header #top #v_2 #part_1 h1 {
   color: white;
   font-family: "Raleway-SemiBold";
-  width: 70%;
+  width: 80%;
   margin-left: 10%;
 }
 #header #top #v_2 #part_2 img {
@@ -130,14 +130,29 @@ body {
   width: 100%;
   cursor: pointer;
   font-family: "Raleway-ExtraBold";
-  margin-top: 145%;
+  margin-top: 164%;
 }
 #header #menu {
   background: white;
 }
 #header #menu a img {
-  margin-top: 10%;
-  margin-left: 5%;
+  margin-top: 80%;
+  margin-left: 35%;
+  width: 30%;
+}
+#header #menu #network {
+  margin-top: 300%;
+  margin-left: 35%;
+}
+#header #menu #network a {
+  text-decoration: none;
+}
+#header #menu #network h5 {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  font-family: "Raleway-Regular";
+  color: gray;
+  margin-top: 50%;
 }
 
 #main #one {
