@@ -37,7 +37,7 @@ $color_text:rgb(0, 255, 106);
 
 @font-face {
     font-family: 'Raleway';
-    src: url(./fonts/raleway/Raleway-Light.ttf) format("truetype");
+    src: url(./fonts/raleway/Raleway-Light.ttf) format('truetype');
 }
 
 @font-face {
@@ -81,7 +81,7 @@ $color_text:rgb(0, 255, 106);
 
 @font-face {
     font-family: 'raleway';
-    src: url('./fonts/raleway/Raleway-ExtraBold.ttf') format("truetype");
+    src: url(./fonts/raleway/Raleway-ExtraBold.ttf) format("truetype");
 }
 
 body {
@@ -301,6 +301,57 @@ body {
                 img {
                     margin-left: 30%;
                 }
+            }
+        }
+    }
+}
+
+#content {
+    margin-top: 10%;
+
+    h5 {
+        font-family: 'Raleway-ExtraBold';
+        font-size: 200%;
+    }
+
+    .row {
+        margin-top: 10%;
+
+        #part_1 {
+
+            h6 {
+                font-family: 'Raleway-ExtraBold';
+                writing-mode: vertical-rl;
+                transform: rotate(180deg);
+                margin-top: 15%;
+                margin-left: 55%;
+                font-size: 130%;
+            }
+
+            .slide {
+                margin-left: 30%;
+
+                h3 {
+                    font-family: 'Raleway-regular';
+
+                    span {
+                        font-family: 'Raleway-Extrabold';
+                        color: $color_text;
+                    }
+                }
+            }
+        }
+    }
+
+    #part_2 {
+        h2 {
+            font-family: 'Raleway-light';
+            font-size: 280%;
+            width: 50%;
+            margin-left: 20%;
+
+            span {
+                color: $color_text;
             }
         }
     }
