@@ -357,3 +357,134 @@ body {
         }
     }
 }
+
+
+.text {
+    margin-top: 15%;
+    font-family: 'Raleway';
+    font-style: 'ExtraBold';
+}
+
+
+#content {
+    #v_1 {
+        #part_1 {
+            .slide {
+                margin-left: 25%;
+                margin-top: 22%;
+
+                h4 {
+                    font-family: 'Raleway';
+                    font-style: 'Regular';
+                    font-size: 130%;
+
+                    span {
+                        color: $color_text;
+                        font-family: 'Raleway';
+                        font-style: 'ExtraBold';
+                    }
+                }
+            }
+
+            h5 {
+                font-family: 'Raleway';
+                font-style: 'ExtraBold';
+                writing-mode: vertical-rl;
+                transform: rotate(180deg);
+                color: rgba(0, 0, 0, 0.425);
+                font-size: 100%;
+            }
+        }
+
+        #part_2 {
+            margin-top: 10%;
+
+            h1 {
+                font-family: 'Raleway-Light';
+
+                span {
+                    color: $color_text;
+                }
+            }
+        }
+    }
+
+    #v_2 {
+        #part_1 {
+            margin-top: 10%;
+
+            h1 {
+                font-family: 'Raleway-Light';
+            }
+
+            span {
+                color: $color_text;
+            }
+        }
+
+        #part_2 {
+            .slide {
+                margin-top: 20%;
+                margin-left: 20%;
+
+                h4 {
+                    font-family: 'Raleway';
+                    font-style: 'Regular';
+                    font-size: 150%;
+
+                    span {
+                        color: $color_text;
+                    }
+                }
+            }
+
+            h5 {
+                font-size: 100%;
+                font-family: 'Raleway';
+                font-style: 'ExtraBold';
+                writing-mode: vertical-rl;
+                transform: rotate(180deg);
+                color: rgba(0, 0, 0, 0.425);
+            }
+        }
+    }
+}
+
+
+#footer {
+    background: rgba(0, 0, 0, 0.678);
+    width: 100%;
+    height: 50%;
+    background-size: cover;
+    margin-top: 10%;
+
+    .row {
+        #part_1 {
+            h4 {
+                margin-top: 10%;
+                font-family: 'Raleway';
+                font-style: 'ExtraBold';
+                color: rgba(0, 0, 0, 0.37);
+            }
+
+            h5 {
+                font-family: 'Raleway-Light';
+                color: white;
+            }
+        }
+
+        #part_2 {
+            h4 {
+                margin-top: 10%;
+                font-family: 'Raleway';
+                font-style: 'ExtraBold';
+                color: rgba(0, 0, 0, 0.37);
+            }
+
+            h5 {
+                font-family: 'Raleway-Light';
+                color: white;
+            }
+        }
+    }
+}
