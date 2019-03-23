@@ -261,6 +261,23 @@ body {
 
 }
 
+@media (min-width:1900px) {
+    #header {
+        #top {
+            #v_3 {
+                h3 {
+                    width: 18%;
+                }
+            }
+
+            #v_4 {
+                button {
+                    margin-top: 11.7%;
+                }
+            }
+        }
+    }
+}
 
 #main {
     width: 100%;
