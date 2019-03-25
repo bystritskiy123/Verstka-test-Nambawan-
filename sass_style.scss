@@ -354,6 +354,8 @@ body {
             .slide {
                 margin-left: 25%;
                 margin-top: 22%;
+                width: 50%;
+                height: 50%;
 
                 h4 {
                     font-family: 'Raleway';
@@ -408,6 +410,8 @@ body {
             .slide {
                 margin-top: 20%;
                 margin-left: 20%;
+                width: 50%;
+                height: 50%;
 
                 h4 {
                     font-family: 'Raleway';
@@ -577,8 +581,8 @@ body {
                     }
                 }
 
-                #part_2{
-                    img{
+                #part_2 {
+                    img {
                         margin-left: 90%;
                         margin-top: -30%;
                         width: 7%;
@@ -586,18 +590,19 @@ body {
                 }
             }
 
-            #v_3{
-                h3{
+            #v_3 {
+                h3 {
                     margin-top: -6%;
                     font-size: 42%;
                 }
             }
 
-            #v_4{
-                button{
+            #v_4 {
+                button {
                     margin-top: 0%;
                     font-size: 30%;
-                    img{
+
+                    img {
                         width: 15%;
                     }
                 }
@@ -605,8 +610,8 @@ body {
         }
     }
 
-    #main{
-        #part_1{
+    #main {
+        #part_1 {
             width: 100%;
             height: 24%;
         }

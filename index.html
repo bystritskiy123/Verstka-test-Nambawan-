@@ -105,7 +105,7 @@
     <div id="content" class="container-fluid">
         <div class="row" id="v_1">
             <div class="col-md-6 row" id="part_1">
-                <div id="carouselExampleControls" class="carousel slide w-50" data-ride="carousel">
+                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <img class="d-block w-100" src="./images/img.png" alt="Первый слайд">
@@ -115,16 +115,40 @@
                         </div>
                     </div>
                     <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="carousel-control-prev-icon" aria-hidden="true" id="left"></span>
                         <span class="sr-only">Previous</span>
                     </a>
                     <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="carousel-control-next-icon " aria-hidden="true" id="right"></span>
                         <span class="sr-only">Next</span>
                     </a>
                     <h4>Покорили ледяные вершины с командон <span>HBO</span></h4>
+                    <span id='counter'>1</span><span>/</span>
+                    <span id='max'>3</span>
                 </div>
                 <h5>Восхождение</h5>
+                <script>
+                    document.getElementById('left').addEventListener('click', function () {
+                        let x = document.getElementById('counter'); /*Элемент текущего числа*/
+                        let m = document.getElementById('max'); /*Элемент общего кол-ва картинок*/
+                        if (x.innerHTML == 1) {
+                            /*Если текущее значение 1...*/
+                            x.innerHTML = m.innerHTML; /*Равняется общему кол-ву (3)...*/
+                        } else {
+                            x.innerHTML = Number(x.innerHTML) - 1; /*Если нет, минус 1 к текущему числу*/
+                        }
+                    });
+
+                    document.getElementById('right').addEventListener('click', function () {
+                        let x = document.getElementById('counter');
+                        let m = document.getElementById('max');
+                        if (x.innerHTML == m.innerHTML) {
+                            x.innerHTML = 1;
+                        } else {
+                            x.innerHTML = Number(x.innerHTML) + 1;
+                        }
+                    });
+                </script>
             </div>
             <div class="col-md-6" id="part_2" align="center">
                 <h1>Находим</h1>
@@ -141,7 +165,7 @@
                 </span>
             </div>
             <div class="col-md-6 row" id="part_2">
-                <div id="carouselExampleControls" class="carousel slide w-50" data-ride="carousel">
+                <div id="carouselExampleControls" class="carousel slide " data-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <img class="d-block w-100" src="./images/img_2.png" alt="Первый слайд">
@@ -151,16 +175,40 @@
                         </div>
                     </div>
                     <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="carousel-control-prev-icon" aria-hidden="true" id="arrow_left"></span>
                         <span class="sr-only">Previous</span>
                     </a>
                     <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="carousel-control-next-icon" aria-hidden="true" id="arrow_right"></span>
                         <span class="sr-only">Next</span>
                     </a>
                     <h4>Поплавали за рыбками с <span>National Geographic</span></h4>
+                    <span id='one'>1</span><span>/</span>
+                    <span id='two'>3</span>
                 </div>
                 <h5>Погружение</h5>
+                <script>
+                    document.getElementById('arrow_left').addEventListener('click', function () {
+                        let x = document.getElementById('one'); /*Элемент текущего числа*/
+                        let m = document.getElementById('two'); /*Элемент общего кол-ва картинок*/
+                        if (x.innerHTML == 1) {
+                            /*Если текущее значение 1...*/
+                            x.innerHTML = m.innerHTML; /*Равняется общему кол-ву (3)...*/
+                        } else {
+                            x.innerHTML = Number(x.innerHTML) - 1; /*Если нет, минус 1 к текущему числу*/
+                        }
+                    });
+
+                    document.getElementById('arrow_right').addEventListener('click', function () {
+                        let x = document.getElementById('one');
+                        let m = document.getElementById('two');
+                        if (x.innerHTML == m.innerHTML) {
+                            x.innerHTML = 1;
+                        } else {
+                            x.innerHTML = Number(x.innerHTML) + 1;
+                        }
+                    });
+                </script>
             </div>
         </div>
     </div>
